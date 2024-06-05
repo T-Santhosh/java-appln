@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: helloworld
-        image: santhoshjava/multi:v2
+        image: your-docker-repo/helloworld:latest
         ports:
         - containerPort: 8080
 
