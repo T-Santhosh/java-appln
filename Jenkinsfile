@@ -4,6 +4,13 @@ pipeline {
         DOCKER_IMAGE = "your-docker-repo/helloworld"
     }
     stages {
+        stage ('git checkout'){
+            steps{
+                script{
+                    git branch: 'node-dev', url: 'https://github.com/T-Santhosh/multi-branch.git'
+                }
+            }
+        }
         stage('Build') {
             steps {
                 script {
