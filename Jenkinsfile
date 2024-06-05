@@ -43,13 +43,7 @@ pipeline {
             }
         }
     }
-    post {
-        always {
-            script {
-                sh 'kubectl get all'
-            }
-        }
-    }
+   
 }
 }
     
