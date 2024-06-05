@@ -12,6 +12,7 @@ pipeline {
             }
         }
         
+        
         stage('Build Docker Image') {
             steps {
                 script {
@@ -29,6 +30,7 @@ pipeline {
                     
                 }
             }
+        }
         }
         stage('Deploy to Kubernetes') {
             steps {
@@ -49,5 +51,6 @@ pipeline {
         }
     }
 }
-    }
 }
+    
+
