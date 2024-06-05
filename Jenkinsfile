@@ -7,7 +7,7 @@ pipeline {
         stage ('git checkout'){
             steps{
                 script{
-                    git 'https://github.com/T-Santhosh/java-appln.git'
+                    git branch: 'main', url: 'https://github.com/T-Santhosh/java-appln.git'
                 }
             }
         }
