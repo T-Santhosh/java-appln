@@ -14,7 +14,7 @@ pipeline {
         stage('Build Docker Image') {
             steps {
                 script {
-                    sh 'docker build -t santhosh2969/multi:v2 .'
+                    sh 'docker build -t santhoshjava/multi:v2 .'
                     sh 'docker images'
                 }
             }
